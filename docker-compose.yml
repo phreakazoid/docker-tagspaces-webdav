@@ -5,7 +5,7 @@ services:
     ports:
       - "80:86"
     volumes:
-      - "/mnt:/media"
+      - "/mnt:/var/dav"
     environment:
       USERNAME: user
       PASSWORD: passwd
