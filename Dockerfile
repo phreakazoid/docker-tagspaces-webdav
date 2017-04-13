@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 ENV TAGSPACES_VERSION 2.7.5
-RUN apt-get update && apt-get install -y nginx nginx-extras apache2-utils
+RUN apt-get update && apt-get install -y nginx nginx-extras apache2-utils && apt-get install -y wget unzip
 
 VOLUME /media
 EXPOSE 80
