@@ -3,7 +3,7 @@ services:
   webdav:
     build: .
     ports:
-      - "80:80"
+      - "80:86"
     volumes:
       - "/mnt:/media"
     environment:
