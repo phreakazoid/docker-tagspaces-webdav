@@ -1,13 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*Dockerfile*)](https://github.com/sashgorokhov/docker-nginx-webdav/blob/master/Dockerfile)
-
-[![](https://badge.imagelayers.io/sashgorokhov/webdav:latest.svg)](https://imagelayers.io/?images=sashgorokhov/webdav:latest 'Get your own badge on imagelayers.io')
-
 # How to use this image
 
 ```console
-$ docker run --name webdav -p 80:80 -v /media:/media -d sashgorokhov/webdav
+$ docker run --name tagspaces -p 80:80 -v /media:/media -d phreakazoid/tagspaces-webdav
 ```
 This will start a webdav server listening on the default port of 80.
 Then access it via `http://localhost:80` or `http://host:80` in a browser.
