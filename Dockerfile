@@ -9,9 +9,9 @@ RUN rm /etc/nginx/sites-enabled/*
 
 COPY entrypoint.sh /
 RUN chmod +x entrypoint.sh \
- && wget https://github.com/tagspaces/tagspaces/releases/download/v${TAGSPACES_VERSION}/tagspaces-${TAGSPACES_VERSION}-web.zip \
- && unzip tagspaces-${TAGSPACES_VERSION}-web.zip \
+ && wget https://github.com/tagspaces/tagspaces/releases/download/v${TAGSPACES_VERSION}/tagspaces-web.zip \
+ && unzip tagspaces-web.zip \
  && mkdir /usr/share/nginx/www \
  && mv tagspaces /usr/share/nginx/www/tagspaces \
- && rm -rf tagspaces-${TAGSPACES_VERSION}-web.zip
+ && rm -rf tagspaces-web.zip
 CMD nginx -g "daemon off;"
