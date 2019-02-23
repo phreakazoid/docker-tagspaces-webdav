@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-ENV TAGSPACES_VERSION 2.9.0
+ENV TAGSPACES_VERSION 3.1.0
 RUN apt-get update && apt-get install -y nginx nginx-extras apache2-utils && apt-get install -y wget unzip
 
 VOLUME /var/dav
